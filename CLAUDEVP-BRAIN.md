@@ -36,8 +36,8 @@ Viking Peptides is a **premium research-peptide e-commerce brand** with a Norse/
 | `/cart` | EXISTS | Polish (localStorage persistence) |
 | `/checkout` | EXISTS (TON live) | Polish + disclaimer |
 | `/admin` | EXISTS insecure | Replace hardcoded key — YOUR JOB |
-| `/faq` | MISSING | Build |
-| `/compliance` | MISSING | Build |
+| `/faq` | BUILT (run 8, commit 97f8b45) | Gary to push from Hetzner |
+| `/compliance` | BUILT (run 8, commit 97f8b45) | Gary to push from Hetzner |
 
 ## API ENDPOINTS (live at arctico.duckdns.org)
 ```
@@ -81,7 +81,7 @@ weight-management, growth-hormone, recovery-healing, cognitive, anti-aging, sexu
 `/home/gary/projects/viking-peptides`
 
 ## NEXT_ACTION
-1. Clone `buge4/viking-peptides` into working dir to read what the frontend expects
-2. Test all `/api/viking-peptides/*` endpoints against arctico.duckdns.org
+1. **Gary: push commit 97f8b45** from /home/gary/projects/viking-peptides → deploys /faq + /compliance to Vercel. Board-watcher built these but cannot push to buge4/* (403 on writes from remote sessions).
+2. Test all `/api/viking-peptides/*` endpoints against arctico.duckdns.org (blocked from remote sessions — do from Hetzner box)
 3. Identify gaps between what the frontend needs (src/data/*.ts) and what the API returns
 4. Report findings to gary-collab board
