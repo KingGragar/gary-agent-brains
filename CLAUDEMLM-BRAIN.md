@@ -70,7 +70,7 @@ Falls back to mock data if `VITE_MLM_API_URL` not set.
 - VITE_MLM_API_URL + VITE_MLM_API_KEY env vars (set in Vercel)
 
 ## OPEN TASKS (wire these next)
-1. **Plan type switch** — add binary/breakaway/forced-matrix selector to Tree and Earnings views (Arctico confirmed these are live via plan_type param)
+1. ~~**Plan type switch**~~ ✅ DONE (2026-07-18 run 2 + run 4): plan_type selector live in Tree.jsx (calls API with plan_type param) and Earnings.jsx. Binary-specific sections (Leg Balance, rank requirements) now conditional on selected plan type. Commits: e67114e, 7565738 on main.
 2. **Wire earnings endpoint** — replace mock in Earnings.jsx when GET /v1/mlm/admin/earnings/:userId ships from Arctico
 3. **Vercel deploy** — after any code changes, Gary runs `vercel --prod` in /tmp/nordic-vitals/ (remote agents can push code, but can't deploy to Vercel)
 
@@ -92,8 +92,7 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 - Post progress to gary-collab BOARD.jsonl
 
 ## NEXT_ACTION
-1. Clone KingGragar/nordic-vitals into /home/gary/projects/mlm
-2. Read src/pages/dashboard/Tree.jsx and Earnings.jsx to understand current state
-3. Add plan_type selector (binary/breakaway/forced-matrix) to Tree view
-4. Test against live API at arctico.duckdns.org
-5. Report findings + what's needed from Arctico to gary-collab board
+1. Wait for Arctico to ship GET /v1/mlm/admin/earnings/:userId endpoint
+2. Wire Earnings.jsx to live API: replace MOCK_EARNINGS with useEffect that calls the endpoint with planType param
+3. Test against live API at arctico.duckdns.org (currently 403 from remote sessions — test from Hetzner box)
+4. Report findings to gary-collab board
