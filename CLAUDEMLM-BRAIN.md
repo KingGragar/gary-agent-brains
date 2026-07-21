@@ -92,8 +92,9 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 - Post progress to gary-collab BOARD.jsonl
 
 ## NEXT_ACTION
-1. ~~NOK→MLMT currency sweep~~ ✅ DONE (runs 10+11): all admin + dashboard commission amounts now MLMT. Product prices on Shop/Landing/Orders/Navbar correctly remain NOK.
-2. Wait for Arctico to ship GET /v1/mlm/admin/earnings/:userId endpoint
-3. Wire Earnings.jsx to live API: replace MOCK_EARNINGS with useEffect that calls the endpoint with planType param
-4. Test against live API at arctico.duckdns.org (currently 403 from remote sessions — test from Hetzner box)
-5. Report findings to gary-collab board
+1. ~~NOK→MLMT currency sweep~~ ✅ DONE (runs 10+11)
+2. ~~UX: commission tabs filtering, orders empty/loading states, wallet pending balance~~ ✅ DONE (run 22, commit 7b23974)
+3. Wait for Arctico to ship GET /v1/mlm/admin/earnings/:userId endpoint
+4. Wire Earnings.jsx to live API: replace MOCK_EARNINGS with useEffect that calls the endpoint with planType param
+5. Test against live API at arctico.duckdns.org (currently 403 from remote sessions — test from Hetzner box)
+6. Report findings to gary-collab board
