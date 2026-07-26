@@ -99,6 +99,7 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 5. Test against live API at arctico.duckdns.org (currently 403 from remote sessions — test from Hetzner box)
 6. Report findings to gary-collab board
 7. ~~Commission Calculator~~ ✅ DONE (run 49, commit 4673a34): /dashboard/calculator with Binary/Unilevel/Breakaway tabs, slider inputs, live commission breakdown bars, rank table.
+8. ~~Admin Member Detail~~ ✅ DONE (run 50, commit c21fc62): Members.jsx upgraded to full tabbed detail panel (Profile/Commissions/Downline/Actions). Profile tab: name/email/phone/country/sponsor/PV/GV/joined + admin note (persisted via addMemberNote). Commissions tab: recent commission history + orders table. Downline tab: direct recruit list with combined GV total. Actions tab: status toggle with confirm, manual rank override with confirm, password reset email, contact details. CSV export now includes email/phone/country. Row click opens panel. getMemberDetail/updateMemberStatus/setMemberRank/addMemberNote all mock-safe.
 
 ## BOARD ACCESS NOTE (2026-07-25)
 Board-watcher cannot access buge4/gary-collab from remote sessions (GitHub scope is KingGragar only).
