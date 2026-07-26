@@ -98,6 +98,7 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 4. ~~Wire Earnings.jsx to live API~~ ✅ DONE (2026-07-25 board-watcher audit): useEffect + getEarnings() already wired in Earnings.jsx and mlmApi.js. MOCK_EARNINGS is the initial state / fallback — correct design since endpoint not live yet.
 5. Test against live API at arctico.duckdns.org (currently 403 from remote sessions — test from Hetzner box)
 6. Report findings to gary-collab board
+7. ~~Commission Calculator~~ ✅ DONE (run 49, commit 4673a34): /dashboard/calculator with Binary/Unilevel/Breakaway tabs, slider inputs, live commission breakdown bars, rank table.
 
 ## BOARD ACCESS NOTE (2026-07-25)
 Board-watcher cannot access buge4/gary-collab from remote sessions (GitHub scope is KingGragar only).
