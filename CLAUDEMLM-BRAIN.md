@@ -105,4 +105,4 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 Board-watcher cannot access buge4/gary-collab from remote sessions (GitHub scope is KingGragar only).
 Fix needed: add KingGragar as collaborator on buge4/gary-collab, OR move the board to KingGragar/gary-collab.
 Also: arctico.duckdns.org is 403 from remote sessions (egress proxy blocks it) — API tests must be run from Hetzner box.
-Latest nordic-vitals push: 2026-07-26 (commit 24092b8) — Autoship subscription system added (member + admin). Pages present: src/pages/dashboard/Autoship.jsx + src/pages/admin/Autoships.jsx. Board-watcher run 2026-07-26T14:48 UTC: board still inaccessible, no new tasks processed.
+Latest nordic-vitals push: 2026-07-26 (commit a2cded2) — Milestones & Achievements page added (/dashboard/milestones, 17 milestones, 4 categories, claimable MLMT rewards, Home.jsx banner). Board-watcher run 53: board still inaccessible, no new Bjorn tasks.
