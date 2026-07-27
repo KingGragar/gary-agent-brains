@@ -101,8 +101,8 @@ Total paid out ≤ X% of turnover, always. Points → real payouts only through 
 7. ~~Commission Calculator~~ ✅ DONE (run 49, commit 4673a34): /dashboard/calculator with Binary/Unilevel/Breakaway tabs, slider inputs, live commission breakdown bars, rank table.
 8. ~~Admin Member Detail~~ ✅ DONE (run 50, commit c21fc62): Members.jsx upgraded to full tabbed detail panel (Profile/Commissions/Downline/Actions). Profile tab: name/email/phone/country/sponsor/PV/GV/joined + admin note (persisted via addMemberNote). Commissions tab: recent commission history + orders table. Downline tab: direct recruit list with combined GV total. Actions tab: status toggle with confirm, manual rank override with confirm, password reset email, contact details. CSV export now includes email/phone/country. Row click opens panel. getMemberDetail/updateMemberStatus/setMemberRank/addMemberNote all mock-safe.
 
-## BOARD ACCESS NOTE (2026-07-26 — STILL BLOCKED)
+## BOARD ACCESS NOTE (2026-07-27 — STILL BLOCKED)
 Board-watcher cannot access buge4/gary-collab from remote sessions (GitHub scope is KingGragar only).
 Fix needed: add KingGragar as collaborator on buge4/gary-collab, OR move the board to KingGragar/gary-collab.
-Also: arctico.duckdns.org is 403 from remote sessions (egress proxy blocks it) — API tests must be run from Hetzner box.
-Latest nordic-vitals push: 2026-07-26 (commit f653e19) — Resources & Downloads page added (/dashboard/resources, 21 resources across 4 categories: Marketing/Products/Training/Compliance, search+filter+download tracking, fully mock-safe). Board-watcher run 54: board still inaccessible, no new Bjorn tasks.
+Also: arctico.duckdns.org is 403/unreachable from remote sessions (egress proxy blocks it) — API tests must be run from Hetzner box.
+Latest nordic-vitals push: 2026-07-27 (commit c49a64b) — SEO improvements: usePageTitle hook, per-page meta titles+descriptions+OG tags on 10 public pages, robots.txt, sitemap.xml. Board-watcher run 55: board still inaccessible, no new Bjorn tasks.
